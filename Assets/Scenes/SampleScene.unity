@@ -10475,10 +10475,10 @@ GameObject:
   - component: {fileID: 629221479}
   - component: {fileID: 629221478}
   - component: {fileID: 629221477}
-  - component: {fileID: 629221476}
   - component: {fileID: 629221475}
   - component: {fileID: 629221480}
   - component: {fileID: 629221481}
+  - component: {fileID: 629221482}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10503,29 +10503,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!136 &629221476
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 629221474}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &629221477
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10625,7 +10602,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8992ff70ac3235f44ad2789c44ab0773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbe: 0
+  Orbes: 0
+--- !u!143 &629221482
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629221474}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5000002
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &636627889
 GameObject:
   m_ObjectHideFlags: 0
@@ -11543,8 +11546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216f078a64e2aaa498344f0ff845ebbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  highscoreText: {fileID: 0}
+  scoreText: {fileID: 351083149}
+  highscoreText: {fileID: 1226096011}
 --- !u!114 &1234001495
 MonoBehaviour:
   m_ObjectHideFlags: 0
