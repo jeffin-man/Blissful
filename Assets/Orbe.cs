@@ -11,12 +11,14 @@ public class Orbe : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnTriggerEnter(Collider other) 
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             other.GetComponent<Player>().PegouOrbe();
             gameObject.SetActive(false);
+
+            ScoreManager.instance.AddPoint();
         }
     }
 }
