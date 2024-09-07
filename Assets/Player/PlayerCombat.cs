@@ -22,7 +22,11 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            attack();
+        }
+        ExitAttack();
     }
 
     void attack()
@@ -31,7 +35,7 @@ public class PlayerCombat : MonoBehaviour
         {
             CancelInvoke("EndCombo");
 
-            if (Time.time - lastClickedTime >= 0.2f) ;
+            if (Time.time - lastClickedTime >= 0.2f);
             anim.Play("Attack", 0, 0);
             comboCounter++;
             lastClickedTime = Time.time;
