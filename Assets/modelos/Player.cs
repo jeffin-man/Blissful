@@ -11,4 +11,10 @@ public class Player : MonoBehaviour
     {
         Orbes++;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+            Slider.instance.UsePureza(15);
+    }
 }

@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-7152489431327875304
+--- !u!1102 &-7932956262789263764
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: rig|flying
+  m_Name: metarig|kerchari mudra
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -6503632067105468782, guid: 36904b551a4b327469348fc11b25e869, type: 3}
+  m_Motion: {fileID: 7126666709969296096, guid: 000d0b9643d59a142af1647933e9f906, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -75,6 +75,58 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &-4727705169746788664
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: metarig|quadrado
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 5385587578049288477, guid: 000d0b9643d59a142af1647933e9f906, type: 3}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &-4570776962308546493
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: metarig|quad - tri - quad
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: -2985569159768259940, guid: 000d0b9643d59a142af1647933e9f906, type: 3}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1109 &-1535761216863440241
 AnimatorTransition:
   m_ObjectHideFlags: 1
@@ -89,14 +141,14 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
---- !u!1102 &-12794559342928026
+--- !u!1102 &-289633371931214937
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: rig|mudra 1
+  m_Name: metarig|quad - tri
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -109,7 +161,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -6062461052063907516, guid: 36904b551a4b327469348fc11b25e869, type: 3}
+  m_Motion: {fileID: -8795189209295704645, guid: 000d0b9643d59a142af1647933e9f906, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -190,14 +242,23 @@ AnimatorStateMachine:
     m_State: {fileID: 6953893751737053368}
     m_Position: {x: 80, y: -70, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -7152489431327875304}
-    m_Position: {x: 320, y: 80, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -12794559342928026}
-    m_Position: {x: 320, y: 190, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: -5209689365259749516}
     m_Position: {x: 140, y: -200, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 9047831023179849151}
+    m_Position: {x: 66.02985, y: 59.351013, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7932956262789263764}
+    m_Position: {x: 156.89749, y: 127.50177, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -4727705169746788664}
+    m_Position: {x: 203.59335, y: 213.32123, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -289633371931214937}
+    m_Position: {x: 293.199, y: 287.78223, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -4570776962308546493}
+    m_Position: {x: 346.2051, y: 353.40894, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -6651087249756230101}
@@ -231,6 +292,32 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 1611d21154753e24ab225f8270895480, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &9047831023179849151
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: metarig|sarvari mudra
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: -129032663857247854, guid: 000d0b9643d59a142af1647933e9f906, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

@@ -32,7 +32,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _Noise_Height
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -50,10 +50,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Noise_Height: 7.23
     - _Noise_Scale: 0.03
     - _Noise_speed: 20
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
+    - _Color_Peak: {r: 0.94716984, g: 0.93140644, b: 0.6701673, a: 0}
+    - _Color_Valley: {r: 0.909804, g: 0.39607847, b: 0.48235297, a: 0}
     - _RotateProjection: {r: 1, g: 0, b: 0, a: 90}
   m_BuildTextureStacks: []
