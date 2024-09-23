@@ -11,7 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
     public float distanceTravelled;
     public EndOfPathInstruction endOfPathInstruction;
     private Vector3 pathPosition;
-    private float yposition;
+    public float yposition;
     public Vector3 pathRotation;
 
     // Start is called before the first frame update
@@ -47,5 +47,9 @@ public class NewBehaviourScript : MonoBehaviour
 
         pathRotation = currentPath.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction).eulerAngles;
         transform.eulerAngles = pathRotation;
+
+
+
+
     }
 }

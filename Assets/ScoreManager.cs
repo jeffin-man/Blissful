@@ -29,7 +29,7 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
    public void AddPoint()
     {
-        score += 1;
+        score += 50;
         scoreText.text = score.ToString() + " POINTS";
     }
         

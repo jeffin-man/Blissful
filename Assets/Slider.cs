@@ -15,7 +15,7 @@ public class Slider : MonoBehaviour
     private int value;
     private int maxValue;
 
-    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
+    private WaitForSeconds regenTick = new WaitForSeconds(0.3f);
 
 
 
@@ -50,7 +50,7 @@ public class Slider : MonoBehaviour
 
     private IEnumerator RegenPureza()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
 
         while (CurrentPureza < MaxPureza)
         {

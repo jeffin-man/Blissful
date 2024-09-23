@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.SocialPlatforms.Impl;
 
 public enum Attacktype { quad = 0, tri = 1, bol = 2, xis = 3 }
 public class FightingCombo : MonoBehaviour
@@ -185,6 +186,8 @@ public class FightingCombo : MonoBehaviour
     }
 
     [System.Serializable]
+
+
     public class Combo
     {
         public string name;
@@ -192,6 +195,7 @@ public class FightingCombo : MonoBehaviour
         public ComboAttack comboAttack;
         public UnityEvent onInputted;
         int curInput = 0;
+        public ScoreManager score;
 
         public bool ContinueCombo(ComboInput i)
         {
@@ -202,15 +206,24 @@ public class FightingCombo : MonoBehaviour
                 {
                     onInputted.Invoke();
                     curInput = 0;
+                    ScoreManager.instance.AddPoint();
+                    
                 }
                 return true;
+
+
             }
             else
             {
+
                 curInput = 0;
                 return false;
+
             }
+
+
         }
+
 
         public ComboInput CurrentComboInput()
         {

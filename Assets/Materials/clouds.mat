@@ -56,7 +56,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Color_Peak: {r: 0.94716984, g: 0.93140644, b: 0.6701673, a: 0}
-    - _Color_Valley: {r: 0.909804, g: 0.39607847, b: 0.48235297, a: 0}
+    - _Color_Peak: {r: 0.854902, g: 0.7294118, b: 0.882353, a: 0}
+    - _Color_Valley: {r: 0.882353, g: 0.6745098, b: 0.79215693, a: 0}
     - _RotateProjection: {r: 1, g: 0, b: 0, a: 90}
   m_BuildTextureStacks: []
