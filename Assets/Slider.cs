@@ -44,6 +44,8 @@ public class Slider : MonoBehaviour
         else
         {
             Debug.Log("sem pureza");
+            Destroy (gameObject);
+
 
         }
     }

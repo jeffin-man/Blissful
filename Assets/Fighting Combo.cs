@@ -196,6 +196,7 @@ public class FightingCombo : MonoBehaviour
         public UnityEvent onInputted;
         int curInput = 0;
         public ScoreManager score;
+        public UnityEngine.UI.Slider slider;
 
         public bool ContinueCombo(ComboInput i)
         {
@@ -207,6 +208,8 @@ public class FightingCombo : MonoBehaviour
                     onInputted.Invoke();
                     curInput = 0;
                     ScoreManager.instance.AddPoint();
+                    Destroy(slider);
+                   
                     
                 }
                 return true;

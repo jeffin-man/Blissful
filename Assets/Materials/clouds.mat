@@ -50,13 +50,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Noise_Height: 7.23
+    - _Noise_Height: 14.76
     - _Noise_Scale: 0.03
     - _Noise_speed: 20
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _Color_Peak: {r: 0.93207544, g: 0.42031327, b: 0.65293247, a: 0}
-    - _Color_Valley: {r: 0.8792453, g: 0.8227282, b: 0.7017372, a: 0}
+    - _Color_Valley: {r: 0.9333334, g: 0.6901961, b: 0.7725491, a: 1}
     - _RotateProjection: {r: 1, g: 0, b: 0, a: 90}
   m_BuildTextureStacks: []
