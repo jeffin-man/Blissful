@@ -4,7 +4,7 @@ using UnityEngine;
 using PathCreation;
 using UnityEditor;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TutorialLevelScript : MonoBehaviour
 {
     public PathCreator currentPath;
     public float speed;
