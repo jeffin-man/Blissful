@@ -20,6 +20,8 @@ public class Mist : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
         {
+            Debug.Log("function");
+
             mistDelay -= Time.deltaTime;
         
             if (mistDelay <= 0)
@@ -27,11 +29,13 @@ public class Mist : MonoBehaviour
                 
                 other.gameObject.GetComponent<HPSystem>().curHP -= mistDmg;
                 mistDelay++;
+                Debug.Log("IF");
             }
 
         }
     private void OnTriggerExit(Collider other)
     {
         mistDelay = delay;
+        Debug.Log("A");
     }
 }
