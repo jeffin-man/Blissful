@@ -26,4 +26,9 @@ public class InimigoVoador : MonoBehaviour
     {
 
     }
+
+    public void RandomNumber()
+    {
+
+    }
 }
