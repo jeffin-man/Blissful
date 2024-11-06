@@ -10261,9 +10261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb4583b88ebc7446929509da6816d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1
   Seguindo: 0
   player: {fileID: 487036575}
+  numeroaleatorio1: 0
+  cooldown: 0
 --- !u!1 &1856596037
 GameObject:
   m_ObjectHideFlags: 0
